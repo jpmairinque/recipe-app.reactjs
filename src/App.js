@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import {BsSearch} from 'react-icons/bs'
 import "./App.css";
 import Recipe from "./components/Recipe";
 
 function App() {
-  const APP_ID = "41f4dbd8";
-  const APP_KEY = "568806e6a9c57e04b85bbc72fdce3d55";
+  const APP_ID = process.env.REACT_APP_APP_ID;
+  const APP_KEY =  process.env.REACT_APP_API_KEY;
 
   const [recipes, setRecipes] = useState([]);
 
@@ -39,8 +40,8 @@ function App() {
     <div className="App">
       <form onSubmit = {getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
-        <button className="search-button " typ e="submit">
-          Go!
+        <button className="search-button " type="submit">
+          <BsSearch/>
         </button>
       </form>
       <div className="recipes">

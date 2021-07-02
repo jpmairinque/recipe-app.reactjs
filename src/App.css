@@ -25,7 +25,8 @@
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  background-color: rgba(255, 166, 0, 0.493);
+  margin-left: 0.5rem;
+  background-color: rgba(138, 107, 47, 0.493);
   border: solid 2px orange;
   cursor: pointer;
 }
