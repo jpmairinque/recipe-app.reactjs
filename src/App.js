@@ -24,7 +24,7 @@ function App() {
     const data = await response.json();
     setRecipes(data.hits);
   };
-
+  
   const updateSearch = e => {
     setSearch(e.target.value) 
   }
